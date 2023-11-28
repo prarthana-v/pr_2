@@ -1,8 +1,11 @@
 #include<stdio.h>
+#include<conio.h>
 main(){
 	int units;
 	float amount;
 	
+	clrscr();
+
 	printf("Enter Electricity units:");
 	scanf("%d",&units);
 	
@@ -13,4 +16,6 @@ main(){
 	
 	amount+=(amount*0.20);
 	printf("Electricity Bill:%0.2f",amount);
+	
+	getch();
 }
